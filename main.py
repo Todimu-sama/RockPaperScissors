@@ -46,7 +46,6 @@ def pickWinner(choiceUser: str, cpuChoice: str) -> str:
 
 
 # ensure that game continues when there is a tie
-
 gameResult: str = pickWinner(userChoice, computerChoice)
 
 while gameResult == "tie":
