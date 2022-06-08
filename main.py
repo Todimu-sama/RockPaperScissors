@@ -4,7 +4,7 @@
 """
     I wrote tests for the functions printActualWord and
     pickWinner in order to ensure they were working in any use
-    case.
+    case. Both test files are in the repository.
 """
 
 from random import choice
