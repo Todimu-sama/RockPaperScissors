@@ -10,7 +10,7 @@ class TestMain(unittest.TestCase):
     """
     Test the function pickWinner from the module main.py
     To run tests in verbose mode, use the following command in terminal
-    python -m unittest TestMain.py
+    >> python -m unittest TestMain.py
    """
 
     # from the main.py file, I ensured that the inputs would be saved as lowercase
