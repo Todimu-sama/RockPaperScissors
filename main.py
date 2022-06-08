@@ -4,15 +4,15 @@
 from random import choice
 
 # creating possible choices list
-possibleChoices: list = ["rock", "paper", "scissors"]
+possibleChoices: list = ["r", "p", "s"]
 
 # getting user choice
-userChoice: str = input("Enter Rock, Paper or Scissors :  ").lower()
+userChoice: str = input("Enter R, P or S :  ").lower()
 
 # ensuring choice is valid
 while userChoice not in possibleChoices:
     print("Invalid response, enter valid response \n")
-    userChoice: str = input("Enter Rock, Paper or Scissors :  ").lower()
+    userChoice: str = input("Enter R, P or S :  ").lower()
 
 # getting computer choice
 computerChoice: str = choice(possibleChoices)
@@ -26,23 +26,23 @@ def pickWinner(choiceUser: str, cpuChoice: str) -> str:
     if choiceUser == cpuChoice:
         return "tie"
 
-    elif choiceUser == "rock":
-        if cpuChoice == "paper":
+    elif choiceUser == "r":
+        if cpuChoice == "p":
             return "{0} gets covered by {1}, computer wins".format(choiceUser, cpuChoice)
         else:
-            return "{0} crushes scissors, you win !".format(choiceUser)
+            return "{0} crushes s, you win !".format(choiceUser)
 
-    elif choiceUser == "paper":
-        if cpuChoice == "scissors":
+    elif choiceUser == "p":
+        if cpuChoice == "s":
             return "{0} gets cut by {1}, computer wins".format(choiceUser, cpuChoice)
         else:
-            return "{0} covers rock, you win !".format(choiceUser)
+            return "{0} covers r, you win !".format(choiceUser)
 
-    elif choiceUser == "scissors":
-        if cpuChoice == "rock":
+    elif choiceUser == "s":
+        if cpuChoice == "r":
             return "{0} gets crushed by  {1}, computer wins".format(choiceUser, cpuChoice)
         else:
-            return "{0} cuts paper, you win !".format(choiceUser)
+            return "{0} cuts p, you win !".format(choiceUser)
 
 
 # ensure that game continues when there is a tie
@@ -50,11 +50,11 @@ gameResult: str = pickWinner(userChoice, computerChoice)
 
 while gameResult == "tie":
     print("We have a tie, lets go again !!!")
-    userChoice: str = input("Enter Rock, Paper or Scissors :  ").lower()
+    userChoice: str = input("Enter R, P or S :  ").lower()
 
     while userChoice not in possibleChoices:
         print("Invalid response, enter valid response \n")
-        userChoice: str = input("Enter Rock, Paper or Scissors :  ").lower()
+        userChoice: str = input("Enter R, P or S :  ").lower()
 
     computerChoice: str = choice(possibleChoices)
 
