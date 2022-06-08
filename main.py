@@ -18,7 +18,7 @@ while userChoice not in possibleChoices:
 computerChoice: str = choice(possibleChoices)
 
 
-# Ensuring words are printed out in full
+# print out words in full
 def printActualWord(letter: str):
     if letter == "r":
         return "rock"
