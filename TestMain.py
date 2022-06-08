@@ -8,6 +8,7 @@ from main import pickWinner
 
 
 class TestMain(unittest.TestCase):
+
     """
     Test the function pickWinner from the module main.py
     To run tests in verbose mode, use the following command in terminal
