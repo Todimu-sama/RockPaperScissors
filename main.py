@@ -1,6 +1,12 @@
 # Rock paper scissors game
 # Author: Todimu Isewon
 
+"""
+    I wrote tests for the functions printActualWord and
+    pickWinner in order to ensure they were working in any use
+    case.
+"""
+
 from random import choice
 
 # creating possible choices list
