@@ -40,7 +40,7 @@ def pickWinner(choiceUser: str, cpuChoice: str) -> str:
 
     elif choiceUser == "s":
         if cpuChoice == "r":
-            return "{0} gets crushed by  {1}, computer wins".format(choiceUser, cpuChoice)
+            return "{0} gets crushed by {1}, computer wins".format(choiceUser, cpuChoice)
         else:
             return "{0} cuts p, you win !".format(choiceUser)
 
