@@ -1,5 +1,6 @@
 """
-Test module for power
+Test module for rock paper scissors game
+Author: Todimu Isewon
 """
 
 import unittest
