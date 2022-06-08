@@ -17,8 +17,22 @@ while userChoice not in possibleChoices:
 # getting computer choice
 computerChoice: str = choice(possibleChoices)
 
+
+# Ensuring words are printed out in full
+def printActualWord(letter: str):
+    if letter == "r":
+        return "rock"
+
+    elif letter == "p":
+        return "paper"
+
+    elif letter == "s":
+        return "scissors"
+
+
 # printing user and computer choices
-print("Player ({0}) : computer ({1}) \n".format(userChoice, computerChoice))
+print("Player ({0}) : computer ({1}) \n"
+      .format(printActualWord(userChoice), printActualWord(computerChoice)))
 
 
 # creating winner picking function
