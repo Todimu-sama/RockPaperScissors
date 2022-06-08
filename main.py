@@ -72,7 +72,8 @@ while gameResult == "tie":
 
     computerChoice: str = choice(possibleChoices)
 
-    print("Player ({0}) : computer ({1}) \n".format(userChoice, computerChoice))
+    print("Player ({0}) : computer ({1}) \n"
+          .format(printActualWord(userChoice), printActualWord(computerChoice)))
 
     gameResult = pickWinner(userChoice, computerChoice)
 
