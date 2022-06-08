@@ -1,5 +1,5 @@
 """
-Test module for rock paper scissors game
+Test module for rock paper scissors game pickWinner function
 Author: Todimu Isewon
 """
 
@@ -7,12 +7,12 @@ import unittest
 from main import pickWinner
 
 
-class TestMain(unittest.TestCase):
+class TestPickWinnerMain(unittest.TestCase):
 
     """
     Test the function pickWinner from the module main.py
-    To run tests in verbose mode, use the following command in terminal
-    >> python -m unittest -v TestMain.py
+    To run tests in verbose mode, use the following command in terminal :
+    >> python -m unittest -v TestPickWinnerMain.py
    """
 
     # from the main.py file, I ensured that the inputs would be saved as lowercase
